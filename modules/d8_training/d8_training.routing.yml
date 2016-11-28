@@ -1,4 +1,4 @@
-d8_training.node_list:
+d8_training.nodepath_list:
   path: 'list/node/path'
   defaults: 
     _controller: '\Drupal\d8_training\Controller\NodelistingController::content'
@@ -16,5 +16,19 @@ d8_training.example_route:
   path: '/example/{node}'
   defaults: 
     _controller: '\Drupal\d8_training\Controller\NodelistingController::example_content'
+  requirements:
+    _permission: 'access content'
+
+d8_training.node_list:
+  path: 'list/tab1'
+  defaults: 
+    _controller: '\Drupal\d8_training\Controller\NodelistingController::content'
+  requirements:
+    _permission: 'access content'
+
+d8_training.taxonomy_list:
+  path: 'list/tab2'
+  defaults: 
+    _controller: '\Drupal\d8_training\Controller\NodelistingController::content'
   requirements:
     _permission: 'access content'

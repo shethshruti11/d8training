@@ -1,0 +1,9 @@
+d8_training.node_list:
+  title: 'First Tab'
+  route_name: d8_training.node_list
+  base_route: d8_training.node_list
+
+d8_training.taxonomy_list:
+  title: 'Second Tab'
+  route_name: d8_training.taxonomy_list
+  base_route: d8_training.node_list

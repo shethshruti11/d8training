@@ -1,0 +1,5 @@
+action.admin:
+  title: Actions
+  description: 'Create task that system can execute'
+  route_name: d8_training.nodepath_list
+  parent: system.admin_config_system
