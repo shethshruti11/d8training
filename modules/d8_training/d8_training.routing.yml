@@ -1,0 +1,20 @@
+d8_training.node_list:
+  path: 'list/node/path'
+  defaults: 
+    _controller: '\Drupal\d8_training\Controller\NodelistingController::content'
+  requirements:
+    _permission: 'access content'
+
+d8_training.dynamic_route:
+  path: 'dynamic/{node}'
+  defaults: 
+    _controller: '\Drupal\d8_training\Controller\NodelistingController::dynamic_content'
+  requirements:
+    _permission: 'access content'
+
+d8_training.example_route:
+  path: '/example/{node}'
+  defaults: 
+    _controller: '\Drupal\d8_training\Controller\NodelistingController::example_content'
+  requirements:
+    _permission: 'access content'
