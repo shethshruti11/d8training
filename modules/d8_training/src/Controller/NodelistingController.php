@@ -4,6 +4,7 @@ namespace Drupal\d8_training\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\node\NodeInterface;
+use Symfony\Component\HttpFoundation\JsonResponse;
 
 class NodelistingController extends ControllerBase {
   public function content() {
@@ -21,8 +22,6 @@ class NodelistingController extends ControllerBase {
   }
 
    public function example_content(NodeInterface $node) {
-    return array(
-      '#markup' => $node->getTitle() .' Hello Shruti test 123 !!'
-    );
+    return new JsonResponse($node->getTitle());
   }
 }
