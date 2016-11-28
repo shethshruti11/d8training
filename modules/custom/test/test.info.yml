@@ -1,0 +1,7 @@
+name: test
+type: module
+description: Testing Module
+core: 8.x
+package: Custom
+dependencies:
+  - views
