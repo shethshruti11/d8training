@@ -1,0 +1,6 @@
+d8 training access content:
+  title: 'd8 training content access'
+  description: 'Permission for d8 training content'
+
+permission_callbacks:
+  - \Drupal\d8_training\Controller\NodelistingPermissions::getnodelistingPermissions
