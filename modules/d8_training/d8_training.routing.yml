@@ -32,3 +32,11 @@ d8_training.taxonomy_list:
     _controller: '\Drupal\d8_training\Controller\NodelistingController::content'
   requirements:
     _permission: 'access content'
+
+d8_training.custom_form:
+  path: 'custom-form'
+  defaults: 
+    _form: '\Drupal\d8_training\Form\SimpleForm'
+    _title: 'Custom Form'
+  requirements:
+    _permission: 'access content'
