@@ -9,6 +9,11 @@ use Symfony\Component\HttpFoundation\Request;
 class QueryAccessCheck implements AccessInterface {
   public function access(Request $request) {
     $qs = $request->getQueryString();
-    return AccessResult::forbidden();
+    if($qs) { 
+      return AccessResult::allowed()->cachePerPermissions();
+    }
+    else {
+      return AccessResult::forbidden(); 
+    }
   }
 }
