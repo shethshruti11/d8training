@@ -40,3 +40,11 @@ d8_training.custom_form:
     _title: 'Custom Form'
   requirements:
     _permission: 'access content'
+
+d8_training.config_form:
+  path: 'config-form'
+  defaults: 
+    _form: '\Drupal\d8_training\Form\WeatherConfig'
+    _title: 'Config Form'
+  requirements:
+    _permission: 'access content'

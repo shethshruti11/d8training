@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+
+function d8_training_theme() {
+  return array(
+    'd8_training_weather' => array(
+      'variables' => array(
+       	'weather_data' => NULL,
+     ),
+    ),
+  );
+}

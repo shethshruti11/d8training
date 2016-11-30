@@ -3,7 +3,11 @@ services:
     class: Drupal\d8_training\QueryAccessCheck
     tags:
       - { name: access_check, applies_to: _query_siteid_check}
+  d8_training.console_demo:
+    class: Drupal\d8_training\ConsoleDemoService
+    arguments: ["@database", "@logger.factory", "@config.factory"]
 
-  d8_tranining.form_manager:
-    class: Drupal\d8_tranining\FormManager
-    arguments: [@database]
+  d8_training.weather_forecast:
+    class: Drupal\d8_training\OpenWeatherForecaster
+    arguments: ["@http_client", "@config.factory"]
+

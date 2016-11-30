@@ -4,3 +4,6 @@ d8 training access content:
 
 permission_callbacks:
   - \Drupal\d8_training\Controller\NodelistingPermissions::getnodelistingPermissions
+consoledemoservice:
+  title: 'ConsoleDemoService'
+  description: 'Allow access to my content'
